@@ -11,12 +11,11 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-drupal`,
       options: {
-        name: "images",
-        path: "./src/images/",
+        baseUrl: `http://admin.andy-blum.com/`,
+        apiBase: `jsonapi`,
       },
-      __key: "images",
-    },
+    }
   ],
 };
