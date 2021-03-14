@@ -1,13 +1,24 @@
 import React from 'react';
+import styled from 'styled-components';
 import GlobalStyles from '../../styles/GlobalStyles';
 import Reset from '../../styles/Reset';
 import Typography from '../../styles/Typography';
 import SEO from '../SEO';
+import SiteFooter from './SiteFooter';
 import SiteHeader from './SiteHeader';
+
+const StyledLayout = styled.div`
+  min-height: 100vh;
+
+  & > footer {
+    position: sticky;
+    top: 100%;
+  }
+`
 
 export default function Layout({ children, ...page }) {
   return (
-    <>
+    <StyledLayout>
       <Reset />
       <GlobalStyles />
       <Typography />
@@ -21,7 +32,7 @@ export default function Layout({ children, ...page }) {
         <h1>{page.title}</h1>
         {children}
       </main>
-      <footer>(footer)</footer>
-    </>
+      <SiteFooter>(footer)</SiteFooter>
+    </StyledLayout>
   )
 }

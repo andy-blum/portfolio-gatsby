@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `http://1a7cee9c1a95.ngrok.io`,
+        baseUrl: `http://admin.andy-blum.com/`,
         apiBase: `jsonapi`,
       },
     }

@@ -8,7 +8,8 @@ const Typography = createGlobalStyle`
     color: var(--dark);
 
     font-family: "Recursive", sans-serif;
-    font-variation-settings: 'MONO' 0, 'wght' 400, 'slnt' 0, 'CRSV' 0;
+    font-weight: 400;
+    font-variation-settings: 'MONO' 0, 'slnt' 0, 'CRSV' 0;
     font-size: 18px;
     line-height: 1.75;
   }
@@ -118,6 +119,14 @@ const Typography = createGlobalStyle`
     &:focus {
       text-decoration: underline;
     }
+  }
+
+  strong {
+    font-weight: bolder;
+  }
+
+  small {
+    font-size: 0.85em;
   }
 `;
 
