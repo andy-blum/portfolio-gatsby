@@ -17,9 +17,9 @@ const Typography = createGlobalStyle`
   // Default stacking margin
   * + :is(
   h1, h2, h3, h4, h5, h6, p, blockquote, pre, fieldset, form,
-  table, article, details, figure, audio, video, iframe
+  table, article, details, figure, audio, video, iframe, .highlighter-rouge
   ) {
-      margin-top: 2em;
+      margin-top: 1em;
   }
 
   // Headings
@@ -60,7 +60,7 @@ const Typography = createGlobalStyle`
     padding: 0;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 13px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.3);
 
     code {
       display: block;

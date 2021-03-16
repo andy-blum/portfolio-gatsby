@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 export default function SummaryOrTrimmed({ summary, processed }) {
   const text = (summary !== '') ? summary : processed;

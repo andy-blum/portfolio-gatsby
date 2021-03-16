@@ -33,9 +33,15 @@ const GlobalStyles = createGlobalStyle`
   word-wrap: normal;
 }
 
-img {
+img, picture, picture source {
   max-width: 100%;
   height: auto;
+  border-radius: 7px;
+
+  &[src^='data:image'][src*='base64'] {
+    image-rendering: crisp-edges;
+    filter: blur(10px);
+  }
 }
 
 `;

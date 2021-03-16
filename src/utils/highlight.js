@@ -10,4 +10,6 @@ const highlightCode = () => {
   }
 }
 
-export default { highlightCode }
+const exports = { highlightCode }
+
+export default exports
